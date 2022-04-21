@@ -32,7 +32,7 @@ const VideoPlayer = ({ src }: VideoPlayerProps) => {
 
 	return (
 		<VideoPlayerWrapper onClick={onClick}>
-			<video src={src} />
+			{!!src && <video src={src} />}
 		</VideoPlayerWrapper>
 	)
 }
